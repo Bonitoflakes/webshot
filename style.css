@@ -1,0 +1,28 @@
+/* Desktops width       >= 1200*/
+/* Small Laptops width  992-1199*/
+/* Tablets width        768-991*/
+/* Mobile width         < 767 */
+
+/* default styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,900;1,900&display=swap');
+
+:root {
+    --bg-color: #102131;
+    --color: #F76461;
+    --span:chocolate;
+    --gradient:  linear-gradient(36.85deg, #F76461 -6.19%, #2A7AFF 135.42%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
