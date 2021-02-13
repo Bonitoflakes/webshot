@@ -8,7 +8,7 @@
 
 :root {
     --bg-color: #102131;
-    --color: #F76461;
+    --color: #000;
     --span:chocolate;
     --gradient:  linear-gradient(36.85deg, #F76461 -6.19%, #2A7AFF 135.42%);
 
@@ -25,4 +25,109 @@ html {
     scroll-behavior: smooth;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 400;
+}
+
+#nav {
+    position: relative;
+    z-index: 12;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 30rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.color {
+    fill: var(--color) !important;
+}
+
+.nav_list {
+    display: inline-block;
+    list-style: none;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 400;
+    transition: all ease 0.4s;
+}
+
+.nav-link:hover {
+    text-shadow: -5px -5px 0 var(--color), 5px -5px 0 var(--color), -5px 5px 0 var(--color), 5px 5px 0 var(--color);
+}
+
+.active {
+    font-weight: 900;
+}
+
+.active:hover {
+    text-shadow: none;
+}
+
+/* hero section styling */
+
+.hero{
+    max-width: 80vw;
+    padding:5rem 10rem; 
+    display:flex;
+    border: 5px solid white;
+    height:85vh;
+}
+.intro_text{
+    margin-left: 10rem;
+    font-size: 3rem;
+    word-break: break-all;
+
+}
+.boldnbig{
+    font-size: 8rem;
+}
+.padl-40{
+    margin-left: 40rem;
+}
+.line{
+    background-color:var(--color);
+    width:8rem;
+    height:10px;
+    border-radius: 10px;
+    margin-top:3rem;
+    margin-left: 10rem;
+}
+.intro_img{
+    max-width: 60vw;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* end of hero section */
+
+/* start of value propostion */
+h2{
+    text-align:center;
+    padding-top: 10em;
+}
+.value-propostion{
+    max-width: 80vw;
+    padding:5rem 12rem; 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:90vh;
+}
+.intro_text2{
+    margin-left: 10rem;
+    font-size: 3rem;
+}
+.sub_text{
+    font-size: 3rem;
 }
